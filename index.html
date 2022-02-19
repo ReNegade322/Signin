@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signin</title>
-    <link rel="stylesheet" href="source/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    
@@ -17,9 +17,9 @@
         <div class="header-content">
             <img class="logo" src="assets/Img/navbar_logo.svg" alt="Messy logo">
             <nav class="nav-r-block">
-                <a class="nav-right" href="">Book a Demo</a>
-                <a class="nav-right" href="">Pricing</a>
-                <a class="nav-right" href="">Sign In</a> 
+                <a class="nav-right link text" href="">Book a Demo</a>
+                <a class="nav-right link text" href="">Pricing</a>
+                <a class="nav-right link text" href="">Sign In</a> 
             </nav>
         </div>
             
@@ -31,27 +31,31 @@
         <div class="form">
             <h1 class="title">Welcome Back!</h1>
     
-            <label class="label-field">
+            <label class="label-field text">
                 Email
-                <input class="field" type="email" placeholder="Email Address">
+                <input class="field" type="email" placeholder="Email Address" required>
             </label>
     
-            <label class="label-field">
+            <label class="label-field text">
                 Password
-                <input class="field" type="Password" placeholder="Password">
+                <input class="field" type="Password" placeholder="Password" required>
             </label>
+
+            <div class="def-set">
+                <label class="text">
+                    <input type="checkbox">
+                    Remember Me
+                </label>
+        
+                <a class="link text" href="">Forgot Password?</a>
+            </div>
+            
+            <button class="button text" type="button">Sign In</button>
     
-            <label>
-                <input type="checkbox">
-                Remember Me
-            </label>
-    
-            <a href="">Forgot Password?</a>
-    
-            <button class="button" type="button">Sign In</button>
-    
-            <a href="">Create an account</a>
+            <a class="crt-acc link text" href="">Create an account</a>
         </div>
+
+        <img class="decoration" src="assets/Img/messy-bg.svg">
     </div>
     
 
@@ -65,23 +69,26 @@
 
 <!-- Footer -->
     <footer class="footer">
-        <div class="footer-columns">
-            <img class="logo" src="assets/Img/navbar_logo.svg" alt="Messy logo">
+        <div class="footer-row">
+            <img class="logo footer-logo" src="assets/Img/navbar_logo.svg" alt="Messy logo">
+            <a class="footer-links" href="#">Help Center</a>    
         </div>
-
-
+          
         <div class="footer-columns-social">
-            <img class="social" src="assets/Img/inst.png">
-            <img class="social" src="assets/Img/twitter.png">
-            <img class="social" src="assets/Img/facebook.png">
+            <img class="social" src="assets/Img/instagram.svg">
+            <img class="social" src="assets/Img/linkedin.svg">
+            <img class="social" src="assets/Img/twitter.svg">
         </div> 
 
-        <a class="footer-links" href="#">Help Center</a>
-                    
-        <a class="footer-links" href="#">Terms of Service</a>
-        <a class="footer-links" href="#">Privacy Policy</a>
-    
-        <p>Ⓒ 2022 MESSY.FM – All rights reserved</p>
+        <div class="footer-row">
+            <p class="copiright text">Ⓒ 2022 MESSY.FM – All rights reserved</p> 
+            <div>
+                <a class="footer-links link text" href="#">Terms of Service</a>
+                <a class="footer-links link text" href="#">Privacy Policy</a>
+            </div>
+
+        </div>
+
                         
     </footer>
 

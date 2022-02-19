@@ -47,21 +47,51 @@ table {
 	border-spacing: 0;
 }
 
+//Variables 
+$accent:#484598;
+
+::placeholder{
+    font-size: 14px;
+
+}
+
+.link{
+    text-decoration: none;
+}
+
+.footer-links{
+    color: white;
+}
 
 .logo{
     cursor: pointer;
     height: 1.5rem;
+    
 }
+
+.text{
+    font-size: 14px;
+}
+
 
 .header{
     background-color: white ;
     width: 100%;
+    height: 48px;
     box-sizing: border-box;
     position: fixed;
+    display: flex;
+    align-items: center;
 
     .header-content{
+        width: 100%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+
+        .nav-right{
+            margin: 0 20px;
+        }
     }
 }
 
@@ -72,38 +102,114 @@ table {
     display: flex;
     justify-content: center;
     background: linear-gradient(63.12deg, rgb(0, 159, 253) 0%, rgb(45, 57, 156) 100%);
+    height: 939px;
 }
 
 .form{
-    width: fit-content;
+    box-sizing: border-box;
+    max-width: 450px;
+    width: 100%;
+    height: fit-content;
     background-color: white;
-    border-radius: 24px;
-    margin: 48px 16px 16px;
+    border-radius: 16px;
+    margin: 96px 16px 16px;
     padding: 64px 48px;
     display: flex;
     flex-direction: column;
 
     .title{
-        color: #484598;
+        color: $accent;
         font-size: 24px;
         font-weight: 700;
         text-align: center;
+        margin-bottom: 40px;
     }
 
     .button{
+        cursor: pointer;
         max-width: 208px;
         width: 100%;
+        width: 100%;
+        padding: 8px;
+        background-color: white;
+        border-color: $accent;
+        color: $accent;
+        border-radius: 20px;
+        margin: 32px auto 14px;
     }
 
     .label-field{
+        margin-bottom: 15px;
+        color: $accent;
         .field{
+            box-sizing: border-box;
+            padding: 8px 8px 8px 34px;
+            width: 100%;
             display: block;
-            border-radius: 12px;
-            
+            border-radius: 50px;
+            border: solid 1px #DFE2E6;
+            margin-top: 5px;
         }
+    }
+
+    .crt-acc{
+        text-align: center;
+        margin-bottom: 32px;
     }
 }
 
+    .def-set{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+
+
+.decoration{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
 .footer{
+    padding: 48px 32px;
     background-color: black;
+
+    .footer-columns-social{
+        margin-top: 30px;
+    }
+    
+    .footer-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer-logo{
+    filter:  brightness(0) invert(1);
+}
+
+.social{
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    padding: 4px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.copiright{
+    color: white;
+    font-weight: 300;
+}
+
+//Hover
+
+.button:hover{
+    background-color: $accent;
+    color: white;
 }
