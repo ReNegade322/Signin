@@ -55,6 +55,10 @@ $accent:#484598;
 
 }
 
+.hamb{
+    display: none;
+}
+
 .link{
     text-decoration: none;
 }
@@ -73,8 +77,29 @@ $accent:#484598;
     font-size: 14px;
 }
 
+.icon{
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 14px;
+    color: lightgray;
+}
+
+.icon2{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    width: 14px;
+    color: lightgray;
+}  
+
+
+.field-w-icon{
+    position: relative;
+}
 
 .header{
+    z-index: 1;
     background-color: white ;
     width: 100%;
     height: 48px;
@@ -91,6 +116,7 @@ $accent:#484598;
 
         .nav-right{
             margin: 0 20px;
+            color: black;
         }
     }
 }
@@ -99,6 +125,7 @@ $accent:#484598;
 
 
 .bg{
+    position: relative;
     display: flex;
     justify-content: center;
     background: linear-gradient(63.12deg, rgb(0, 159, 253) 0%, rgb(45, 57, 156) 100%);
@@ -164,15 +191,11 @@ $accent:#484598;
         align-items: center;
     }
 
-
-
-
 .decoration{
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 80px;
 }
-
 
 .footer{
     padding: 48px 32px;
@@ -180,8 +203,9 @@ $accent:#484598;
 
     .footer-columns-social{
         margin-top: 30px;
+        margin-bottom: 48px;
     }
-    
+
     .footer-row{
         display: flex;
         align-items: center;
@@ -200,6 +224,7 @@ $accent:#484598;
     padding: 4px;
     background-color: white;
     border-radius: 50px;
+    margin-right: 10px;
 }
 
 .copiright{
@@ -207,9 +232,61 @@ $accent:#484598;
     font-weight: 300;
 }
 
+.help{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1088px;
+    width: 100%;
+}
+
 //Hover
 
 .button:hover{
     background-color: $accent;
     color: white;
+}
+
+
+@media (max-width: 991px) {
+
+    .header{
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    .nav-r-block{
+        display: none;
+    }
+
+    .container{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .form{
+        padding: 64px 32px;
+    }
+
+    .hamb{
+        display:block;
+    }
+
+    .footer{
+
+        padding: 48px 0;
+        display: flex;
+        flex-direction: column;
+
+        .footer-row{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+    }
 }
