@@ -1,0 +1,22 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReNegade322/Signin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ReNegade322/Signin/issues"
+  },
+  "homepage": "https://github.com/ReNegade322/Signin#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
