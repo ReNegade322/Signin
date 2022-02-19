@@ -158,6 +158,7 @@ table {
   align-items: center; }
 
 .decoration {
+  user-select: none;
   pointer-events: none;
   width: 100%;
   position: absolute;

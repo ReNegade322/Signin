@@ -199,6 +199,7 @@ $accent:#484598;
     }
 
 .decoration{
+    user-select: none;
     pointer-events: none;
     width: 100%;
     position: absolute;
