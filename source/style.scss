@@ -199,6 +199,7 @@ $accent:#484598;
     }
 
 .decoration{
+    pointer-events: none;
     width: 100%;
     position: absolute;
     bottom: 80px;

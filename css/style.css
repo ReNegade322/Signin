@@ -158,6 +158,7 @@ table {
   align-items: center; }
 
 .decoration {
+  pointer-events: none;
   width: 100%;
   position: absolute;
   bottom: 80px; }
