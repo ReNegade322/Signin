@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+*{
+    border-width:0;
+}
+
+
+
 //Variables 
 $accent:#484598;
 
@@ -159,10 +165,11 @@ $accent:#484598;
         width: 100%;
         padding: 8px;
         background-color: white;
-        border-color: $accent;
+        border: 2px solid $accent;
         color: $accent;
         border-radius: 20px;
         margin: 32px auto 14px;
+        text-decoration: none;
     }
 
     .label-field{

@@ -44,6 +44,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  border-width: 0; }
+
 ::placeholder {
   font-size: 14px; }
 
@@ -129,10 +132,11 @@ table {
     width: 100%;
     padding: 8px;
     background-color: white;
-    border-color: #484598;
+    border: 2px solid #484598;
     color: #484598;
     border-radius: 20px;
-    margin: 32px auto 14px; }
+    margin: 32px auto 14px;
+    text-decoration: none; }
   .form .label-field {
     margin-bottom: 15px;
     color: #484598; }
